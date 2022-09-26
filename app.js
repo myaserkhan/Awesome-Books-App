@@ -11,7 +11,7 @@ const listBooks = document.querySelector('.container ul');
 const myButton = document.querySelector('#btn-list');
 
 myButton.addEventListener('click', (e) => {
-  if(title.value != "" && author != "") {
+  if(title.value != "" && author.value != "") {
     e.preventDefault();
 
     const titleBooks = document.createElement('li');
@@ -23,6 +23,7 @@ myButton.addEventListener('click', (e) => {
     listBooks.appendChild(authorBooks);
 
     const remove = document.createElement('button');
+    remove.setAttribute('class', 'remove');
     remove.innerText = 'Remove'
     listBooks.appendChild(remove);
 
@@ -30,3 +31,15 @@ myButton.addEventListener('click', (e) => {
     listBooks.appendChild(hr);
   }
 })
+
+// Event: Remove a Book 
+const close = document.querySelectorAll('.remove');
+
+for(let i=0; i<close.length; i++) {
+  close[i].addEventListener('click', () => {
+    close[i].parentElement.style.opacity = 0;
+    setTimeout(() => {
+      close[i].parentElement.style.diplay = "none";
+    }, 500);
+  });
+}
