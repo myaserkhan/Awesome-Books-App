@@ -1,9 +1,9 @@
-class Book {
-  constructor (title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
+// class Book {
+//   constructor (title, author) {
+//     this.title = title;
+//     this.author = author;
+//   }
+// }
 
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
@@ -33,13 +33,5 @@ myButton.addEventListener('click', (e) => {
 })
 
 // Event: Remove a Book 
-const close = document.querySelectorAll('.remove');
 
-for(let i=0; i<close.length; i++) {
-  close[i].addEventListener('click', () => {
-    close[i].parentElement.style.opacity = 0;
-    setTimeout(() => {
-      close[i].parentElement.style.diplay = "none";
-    }, 500);
-  });
-}
+
