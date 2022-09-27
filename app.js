@@ -51,3 +51,14 @@ myButton.addEventListener('click', (e) => {
     })
   }
 })
+
+// Local storage
+const bookForm = document.querySelector('#addBook');
+const content = JSON.parse(window.localStorage.getItem('storage'));
+function check() {
+  if (localStorage.getItem('storage')) {
+    bookForm.elements.title.value = content.title;
+    bookForm.elements.author.value = content.author;
+  }
+}
+window.onload = check;
