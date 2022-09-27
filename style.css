@@ -1,4 +1,7 @@
+.container ul {
+  padding: 0;
+}
+
 .container ul li {
   list-style: none;
 }
-
