@@ -31,7 +31,7 @@ myButton.addEventListener('click', (e) => {
 
     const remove = document.createElement('button');
 
-      // Event: Remove a Book
+    // Event: Remove a Book
     remove.innerText = 'Remove';
     listBooks.appendChild(remove);
     remove.setAttribute('id', `remove-${index}`);
@@ -43,9 +43,9 @@ myButton.addEventListener('click', (e) => {
       authorBooks.remove();
       remove.remove();
       hr.remove();
-    })
+    });
   }
-})
+});
 
 // Local storage
 const bookForm = document.querySelector('#addBook');
