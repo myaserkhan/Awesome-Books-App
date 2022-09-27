@@ -4,15 +4,22 @@
 //     this.author = author;
 //   }
 // }
+// const awesomeBooks = [];
+
+// awesomeBooks.push(new Book(title.value, author.value));
+
+// console.log(awesomeBooks);
 
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 const listBooks = document.querySelector('.container ul');
 const myButton = document.querySelector('#btn-list');
+let index = 0
 
 myButton.addEventListener('click', (e) => {
   if(title.value != "" && author.value != "") {
     e.preventDefault();
+    index += 1;
 
     const titleBooks = document.createElement('li');
     titleBooks.innerHTML = title.value;
@@ -23,15 +30,24 @@ myButton.addEventListener('click', (e) => {
     listBooks.appendChild(authorBooks);
 
     const remove = document.createElement('button');
-    remove.setAttribute('class', 'remove');
+
+
+      // Event: Remove a Book
+    
     remove.innerText = 'Remove'
     listBooks.appendChild(remove);
-
+    remove.setAttribute('id', `remove-${index}`);
     const hr = document.createElement('hr');
     listBooks.appendChild(hr);
+
+    const button = document.querySelector(`#remove-${index}`);
+     
+    button.addEventListener('click', () => {
+      titleBooks.remove();
+      authorBooks.remove();
+      remove.remove();
+      hr.remove();
+      
+    })
   }
 })
-
-// Event: Remove a Book 
-
-
