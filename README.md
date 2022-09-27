@@ -2,55 +2,50 @@
 
 # Project Name
 
-> Description the project.
+> Awesome Book.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Languages: HTML, CSS, JavaScript
+- Technologies used: HTML, CSS, JavaScript 
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
+To get a local copy up and running follow these simple example steps.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+To run this app on your local computer you need the browser (Google Chrome is the best)
+
 ### Setup
+
+- Clone the repository on your local machine
+- Cd into the folder
 
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Install VSCode or any code editor you like
+- Install npm by running npm install
 
 ## Authors
 
-👤 **Author1**
+👤 **Yaser Khan**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubYasir](https://github.com/MYaserKhan)
+- Twitter: [@twitterYasir](https://twitter.com/khanyaser007)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yasir-khan-398229195/)
 
-👤 **Author2**
+👤 **Oliver Kango**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubolivier](https://github.com/Olivier-Kango)
+- Twitter: [@twitterolivier](https://twitter.com/olivierkango1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olivier-kango-b990601b8/)
 
 ## 🤝 Contributing
 
