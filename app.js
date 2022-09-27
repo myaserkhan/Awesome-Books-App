@@ -14,10 +14,10 @@ const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 const listBooks = document.querySelector('.container ul');
 const myButton = document.querySelector('#btn-list');
-let index = 0
+let index = 0;
 
 myButton.addEventListener('click', (e) => {
-  if(title.value != "" && author.value != "") {
+  if (title.value !== '' && author.value !== '') {
     e.preventDefault();
     index += 1;
 
@@ -31,23 +31,18 @@ myButton.addEventListener('click', (e) => {
 
     const remove = document.createElement('button');
 
-
       // Event: Remove a Book
-    
-    remove.innerText = 'Remove'
+    remove.innerText = 'Remove';
     listBooks.appendChild(remove);
     remove.setAttribute('id', `remove-${index}`);
     const hr = document.createElement('hr');
     listBooks.appendChild(hr);
-
     const button = document.querySelector(`#remove-${index}`);
-     
     button.addEventListener('click', () => {
       titleBooks.remove();
       authorBooks.remove();
       remove.remove();
       hr.remove();
-      
     })
   }
 })
