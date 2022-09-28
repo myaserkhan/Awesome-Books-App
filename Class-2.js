@@ -1,4 +1,5 @@
-
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-undef */
 function getInput() {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
