@@ -10,10 +10,14 @@ class Library {
     this.data = [];
   }
 
+
+
   addBook(book) {
-    this.data.push(book);
-    localStorage.setItem('library', JSON.stringify(this.data));
-    addToUI(book);
+    if(title.value != "" && author.value != "") {
+      this.data.push(book);
+      localStorage.setItem('library', JSON.stringify(this.data));
+      addToUI(book);
+    }
   }
 
   removeBook(id) {
@@ -30,17 +34,16 @@ function getInput() {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
   const book = new Book(title.value, author.value);
-  title.value = '';
-  author.value = '';
-  return book;
+  return book
 }
 
 function addToUI(bookObj) {
   const bookList = document.getElementById('lists');
-  const book = document.createElement('LI');
+  const book = document.createElement('li');
   book.setAttribute('id', bookObj.id);
-  book.innerHTML = `<p> ${bookObj.title} </p> <p>${bookObj.author} </p>`;
+  book.innerHTML = `<p>"${bookObj.title}" by ${bookObj.author}</p>`;
   const deleteBtn = document.createElement('button');
+  deleteBtn.setAttribute('class', 'effacer')
   deleteBtn.innerHTML = 'Remove';
   deleteBtn.addEventListener('click', () => library.removeBook(bookObj.id));
   book.appendChild(deleteBtn);
@@ -52,6 +55,7 @@ const addButton = document.getElementById('btn');
 addButton.addEventListener('click', () => {
   const book = getInput();
   library.addBook(book);
+  bookList.style.border = '2px solid black';
 });
 
 // Load page
