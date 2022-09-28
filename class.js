@@ -10,8 +10,6 @@ class Library {
     this.data = [];
   }
 
-
-
   addBook(book) {
     if(title.value != "" && author.value != "") {
       this.data.push(book);
