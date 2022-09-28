@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -11,7 +13,7 @@ class Library {
   }
 
   addBook(book) {
-    if(title.value != "" && author.value != "") {
+    if (this.title.value !== '' && this.author.value !== '') {
       this.data.push(book);
       localStorage.setItem('library', JSON.stringify(this.data));
       addToUI(book);
@@ -32,7 +34,7 @@ function getInput() {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
   const book = new Book(title.value, author.value);
-  return book
+  return book;
 }
 
 function addToUI(bookObj) {
@@ -41,7 +43,7 @@ function addToUI(bookObj) {
   book.setAttribute('id', bookObj.id);
   book.innerHTML = `<p>"${bookObj.title}" by ${bookObj.author}</p>`;
   const deleteBtn = document.createElement('button');
-  deleteBtn.setAttribute('class', 'effacer')
+  deleteBtn.setAttribute('class', 'effacer');
   deleteBtn.innerHTML = 'Remove';
   deleteBtn.addEventListener('click', () => library.removeBook(bookObj.id));
   book.appendChild(deleteBtn);
@@ -53,7 +55,7 @@ const addButton = document.getElementById('btn');
 addButton.addEventListener('click', () => {
   const book = getInput();
   library.addBook(book);
-  bookList.style.border = '2px solid black';
+  // bookList.style.border = '2px solid black';
 });
 
 // Load page
