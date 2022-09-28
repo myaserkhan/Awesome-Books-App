@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="//db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=NoyhRW01-Medium" rel="stylesheet" type="text/css"/>
     <title>Awesome Books App</title>
   </head>
 
   <body>
     <div class="container" id="books">
-      <h1>Awesome Books</h1>
+      <h1 id="h1">All awesome books</h1>
       <ul id="lists"></ul>
       <form>
+        <h1>Add a new book</h1>
         <input
           type="text"
           name="title"
           id="title"
           placeholder="Title"
           class="title"
+          required
         />
         <br /><br />
         <input
@@ -27,6 +30,7 @@
           id="author"
           placeholder="Author"
           class="author"
+          required
         />
         <br /><br />
         <button id="btn">Add</button>
