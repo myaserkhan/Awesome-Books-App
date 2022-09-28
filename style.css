@@ -5,9 +5,8 @@
 .container ul {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
+  padding: 0;
   width: 50%;
-  gap: 5px;
 }
 
 .container ul li {
@@ -15,9 +14,11 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  padding: 0 15px;
+}
+
+.container ul li:nth-child(odd) {
   background: #ccc;
-  border-bottom: 2px solid black;
-  padding: 0 10px;
 }
 
 .effacer {
