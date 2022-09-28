@@ -1,7 +1,61 @@
+* {
+  font-family: NoyhRW01-Medium, sans-serif;
+}
+
 .container ul {
+  display: flex;
+  flex-direction: column;
   padding: 0;
+  width: 50%;
 }
 
 .container ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  padding: 0 15px;
+}
+
+.container ul li:nth-child(odd) {
+  background: #ccc;
+}
+
+.effacer {
+  height: 35px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+form {
+  width: 35%;
+}
+
+input {
+  font-size: medium;
+  width: 98%;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+
+button {
+  font-size: medium;
+  float: right;
+  border: solid 2px black;
+  box-shadow: 3px 3px 0 0;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 0 0;
+}
+
+form h1 {
+  text-align: center;
 }
