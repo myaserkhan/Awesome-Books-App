@@ -7,13 +7,20 @@ class Book {
   }
 }
 
+function getInput() {
+  const title = document.getElementById('title');
+  const author = document.getElementById('author');
+  const book = new Book(title.value, author.value);
+  return book;
+}
+
 class Library {
   constructor() {
     this.data = [];
   }
 
   addBook(book) {
-    if (this.title.value !== '' && this.author.value !== '') {
+    if (getInput().title !== '' && getInput().author !== '') {
       this.data.push(book);
       localStorage.setItem('library', JSON.stringify(this.data));
       addToUI(book);
@@ -30,13 +37,6 @@ class Library {
 
 const library = new Library();
 
-function getInput() {
-  const title = document.getElementById('title');
-  const author = document.getElementById('author');
-  const book = new Book(title.value, author.value);
-  return book;
-}
-
 function addToUI(bookObj) {
   const bookList = document.getElementById('lists');
   const book = document.createElement('li');
@@ -48,6 +48,9 @@ function addToUI(bookObj) {
   deleteBtn.addEventListener('click', () => library.removeBook(bookObj.id));
   book.appendChild(deleteBtn);
   bookList.appendChild(book);
+  if (localStorage.getItem('library') !== []) {
+    bookList.style.border = '2px solid black';
+  }
 }
 
 // Add Button
@@ -55,7 +58,6 @@ const addButton = document.getElementById('btn');
 addButton.addEventListener('click', () => {
   const book = getInput();
   library.addBook(book);
-  // bookList.style.border = '2px solid black';
 });
 
 // Load page
