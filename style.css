@@ -1,5 +1,5 @@
 * {
-  font-family: "NoyhRW01-Medium", Verdana;
+  font-family: NoyhRW01-Medium, sans-serif;
 }
 
 .container ul {
@@ -42,8 +42,8 @@ input {
 
 button {
   font-size: medium;
-  float:right;
-  border:solid 2px black;
+  float: right;
+  border: solid 2px black;
   box-shadow: 3px 3px 0 0;
 }
 
@@ -55,10 +55,3 @@ button:hover {
 form h1 {
   text-align: center;
 }
-
-.li-book {
-  
-}
-
-
-
