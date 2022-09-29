@@ -55,6 +55,7 @@ const addButton = document.getElementById('btn');
 addButton.addEventListener('click', () => {
   const book = getInput();
   library.addBook(book);
+  // library.addNewBooks();
 });
 
 // Load page
