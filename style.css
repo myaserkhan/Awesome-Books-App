@@ -59,6 +59,7 @@ button:hover {
 
 form h2 {
   text-align: center;
+  font-size: 2rem;
 }
 
 .navbar {
@@ -96,8 +97,4 @@ form h2 {
   text-align: right;
   padding: 0;
   margin: 0 1rem;
-}
-
-.div-contact {
-  
 }
