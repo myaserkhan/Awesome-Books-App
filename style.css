@@ -57,7 +57,7 @@ button:hover {
   box-shadow: 5px 5px 0 0;
 }
 
-form h1 {
+form h2 {
   text-align: center;
 }
 
@@ -65,13 +65,25 @@ form h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
+  border: 2px solid black;
+  margin: 1rem;
+  font-size: 1.2rem;
 }
 
 .navbar ul {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 5px;
+}
+
+.navbar ul li {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  cursor: pointer;
 }
 
 .navbar ul li:nth-child(2) {
@@ -81,6 +93,11 @@ form h1 {
 }
 
 .date-time {
-  float: right;
-  padding: 0 2rem;
+  text-align: right;
+  padding: 0;
+  margin: 0 1rem;
+}
+
+.div-contact {
+  
 }
