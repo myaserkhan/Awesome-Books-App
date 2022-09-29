@@ -1,5 +1,7 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
 * {
-  font-family: NoyhRW01-Medium, sans-serif;
+  font-family: 'Cascadia Code', sans-serif;
 }
 
 .container ul {
@@ -15,6 +17,13 @@
   align-items: center;
   list-style: none;
   padding: 0 15px;
+}
+
+.navbar ul li {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  cursor: pointer;
 }
 
 .container ul li:nth-child(odd) {
@@ -79,13 +88,6 @@ form h2 {
   margin: 5px;
 }
 
-.navbar ul li {
-  display: flex;
-  height: 2rem;
-  align-items: center;
-  cursor: pointer;
-}
-
 .navbar ul li:nth-child(2) {
   border-right: 2px solid black;
   border-left: 2px solid black;
@@ -108,6 +110,7 @@ form h2 {
   right: 0;
   width: auto;
 }
+
 .div-contact {
   display: none;
   list-style: inside;
@@ -118,4 +121,3 @@ form h2 {
   display: inline-block;
   text-align: left;
 }
-
