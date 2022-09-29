@@ -24,7 +24,7 @@ const addNewBooks = () => {
   addNew.style.color = '#006abc';
   linkList.style.color = '#000';
   linkContact.style.color = '#000';
-}
+};
 
 addNew.addEventListener('click', addNewBooks);
 
@@ -35,17 +35,17 @@ const linkListBooks = () => {
   linkList.style.color = '#006abc';
   addNew.style.color = '#000';
   linkContact.style.color = '#000';
-}
+};
 
 linkList.addEventListener('click', linkListBooks);
 
 const linkContactBooks = () => {
-  divContact.style.display = 'flex';
+  divContact.style.display = 'block';
   divList.style.display = 'none';
   divAdd.style.display = 'none';
   linkContact.style.color = '#006abc';
   addNew.style.color = '#000';
   linkList.style.color = '#000';
-}
+};
 
 linkContact.addEventListener('click', linkContactBooks);
