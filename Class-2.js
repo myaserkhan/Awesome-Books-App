@@ -24,7 +24,6 @@ class Library {
   removeBook(id) {
     const book = document.getElementById(id);
     book.remove();
-    localStorage.getItem
     this.data = this.data.filter((bookObj) => bookObj.id !== id);
     localStorage.setItem('library', JSON.stringify(this.data));
     window.location.reload();
@@ -50,7 +49,6 @@ function addToUI(bookObj) {
     bookList.style.border = '2px solid black';
   }
 }
-
 
 // Add Button
 const addButton = document.getElementById('btn');
