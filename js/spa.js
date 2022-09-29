@@ -17,28 +17,35 @@ const divList = document.querySelector('.container-list');
 const divAdd = document.querySelector('#books');
 const divContact = document.querySelector('.div-contact');
 
-divContact.style.background = 'red';
-
-addNew.addEventListener('click', () => {
+const addNewBooks = () => {
+  divAdd.style.display = 'flex';
   divList.style.display = 'none';
   divContact.style.display = 'none';
   addNew.style.color = '#006abc';
   linkList.style.color = '#000';
   linkContact.style.color = '#000';
-});
+}
 
-linkList.addEventListener('click', () => {
+addNew.addEventListener('click', addNewBooks);
+
+const linkListBooks = () => {
+  divList.style.display = 'flex';
   divAdd.style.display = 'none';
   divContact.style.display = 'none';
   linkList.style.color = '#006abc';
   addNew.style.color = '#000';
   linkContact.style.color = '#000';
-});
+}
 
-linkContact.addEventListener('click', () => {
+linkList.addEventListener('click', linkListBooks);
+
+const linkContactBooks = () => {
+  divContact.style.display = 'flex';
   divList.style.display = 'none';
   divAdd.style.display = 'none';
   linkContact.style.color = '#006abc';
   addNew.style.color = '#000';
   linkList.style.color = '#000';
-});
+}
+
+linkContact.addEventListener('click', linkContactBooks);
