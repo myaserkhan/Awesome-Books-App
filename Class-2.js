@@ -1,9 +1,10 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-undef */
+
 function getInput() {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
-  const book = new Book(title.value, author.value);
+  const book = new Book(title.value, author.value, Math.random());
   return book;
 }
 
@@ -23,8 +24,10 @@ class Library {
   removeBook(id) {
     const book = document.getElementById(id);
     book.remove();
+    localStorage.getItem
     this.data = this.data.filter((bookObj) => bookObj.id !== id);
     localStorage.setItem('library', JSON.stringify(this.data));
+    window.location.reload();
   }
 }
 
@@ -38,13 +41,16 @@ function addToUI(bookObj) {
   const deleteBtn = document.createElement('button');
   deleteBtn.setAttribute('class', 'effacer');
   deleteBtn.innerHTML = 'Remove';
-  deleteBtn.addEventListener('click', () => library.removeBook(bookObj.id));
+  deleteBtn.addEventListener('click', () => {
+    library.removeBook(bookObj.id);
+  });
   book.appendChild(deleteBtn);
   bookList.appendChild(book);
-  if (localStorage.getItem('library') !== []) {
+  if (localStorage.getItem('library').length > 1) {
     bookList.style.border = '2px solid black';
   }
 }
+
 
 // Add Button
 const addButton = document.getElementById('btn');
