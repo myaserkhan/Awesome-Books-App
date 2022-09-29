@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href="//db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=NoyhRW01-Medium" rel="stylesheet" type="text/css"/>
+    <link
+      href="//db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=NoyhRW01-Medium"
+      rel="stylesheet"
+      type="text/css"
+    />
     <title>Awesome Books App</title>
   </head>
 
   <body>
+    <header>
+      <nav class="navbar">
+        <a>Awesome Books</a>
+        <ul id="nav-list">
+          <li id="link-list">List</li>
+          <li id="link-add">Add new</li>
+          <li id="link-contact">Contact</li>
+        </ul>
+      </nav>
+      <p class="date-time"></p>
+    </header>
     <div class="container" id="books">
       <h1 id="h1">All awesome books</h1>
       <ul id="lists"></ul>
@@ -36,7 +51,11 @@
         <button id="btn">Add</button>
       </form>
     </div>
-    <script src="Class.js"></script>
-    <script src="Class-2.js"></script>
+    <footer id="footer">
+      <p id="copyright">&copy;Copyright Olivier and Yasir</p>
+    </footer>
+    <script src="./js/class.js"></script>
+    <script src="./js/Class-2.js"></script>
+    <script src="./js/spa.js"></script>
   </body>
 </html>

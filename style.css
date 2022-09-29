@@ -1,5 +1,6 @@
 * {
   font-family: NoyhRW01-Medium, sans-serif;
+  list-style: none;
 }
 
 .container ul {
@@ -58,4 +59,28 @@ button:hover {
 
 form h1 {
   text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar ul li:nth-child(2) {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  padding: 0 1rem;
+}
+
+.date-time {
+  float: right;
+  padding: 0 2rem;
 }
