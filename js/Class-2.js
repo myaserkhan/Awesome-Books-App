@@ -26,7 +26,6 @@ class Library {
     book.remove();
     this.data = this.data.filter((bookObj) => bookObj.id !== id);
     localStorage.setItem('library', JSON.stringify(this.data));
-    window.location.reload();
   }
 }
 
@@ -55,6 +54,7 @@ const addButton = document.getElementById('btn');
 addButton.addEventListener('click', () => {
   const book = getInput();
   library.addBook(book);
+  // library.addNewBooks();
 });
 
 // Load page
