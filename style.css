@@ -1,6 +1,5 @@
 * {
   font-family: NoyhRW01-Medium, sans-serif;
-  list-style: none;
 }
 
 .container ul {
@@ -69,7 +68,7 @@ form h2 {
   padding: 0 1.5rem;
   border: 2px solid black;
   margin: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .navbar ul {
@@ -98,3 +97,25 @@ form h2 {
   padding: 0;
   margin: 0 1rem;
 }
+
+.footer {
+  border: 2px solid black;
+  padding: 0 1.5rem;
+  margin: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+.div-contact {
+  display: none;
+  list-style: inside;
+  text-align: center;
+}
+
+.div-contact ul {
+  display: inline-block;
+  text-align: left;
+}
+
