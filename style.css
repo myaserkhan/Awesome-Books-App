@@ -4,6 +4,10 @@
   font-family: 'Cascadia Code', sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container ul {
   display: flex;
   flex-direction: column;
@@ -36,6 +40,7 @@
 }
 
 .container {
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -72,12 +77,18 @@ form h2 {
 
 .navbar {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
   border: 2px solid black;
   margin: 1rem;
   font-size: 1rem;
+  background: white;
 }
 
 .navbar ul {
@@ -95,23 +106,30 @@ form h2 {
 }
 
 .date-time {
-  text-align: right;
+  position: fixed;
+  top: 4rem;
+  right: 0;
+  width: auto;
   padding: 0;
   margin: 0 1rem;
+  background: white;
+  padding: 10px;
 }
 
 .footer {
+  position: fixed;
   border: 2px solid black;
   padding: 0 1.5rem;
   margin: 1rem;
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: auto;
+  background: white;
 }
 
 .div-contact {
+  margin-top: 10.5rem;
   display: none;
   list-style: inside;
   text-align: center;
@@ -120,4 +138,24 @@ form h2 {
 .div-contact ul {
   display: inline-block;
   text-align: left;
+}
+
+.container-list {
+  display: none;
+  margin-top: 10.5rem;
+  margin-bottom: 8rem;
+  overflow: auto;
+  max-height: 55vh;
+}
+
+#h1 {
+  position: fixed;
+  top: 100px;
+}
+
+.success {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  margin: 40% auto;
 }
