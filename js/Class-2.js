@@ -26,7 +26,6 @@ class Library {
     book.remove();
     this.data = this.data.filter((bookObj) => bookObj.id !== id);
     localStorage.setItem('library', JSON.stringify(this.data));
-    window.location.reload();
   }
 }
 
